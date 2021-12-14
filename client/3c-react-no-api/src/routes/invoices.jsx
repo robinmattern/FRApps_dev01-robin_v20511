@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
-// import { getInvoices } from "../data";
+import { getInvoices } from "../data";
 
-export async default function Invoices() {
+export default function Invoices() {
   let invoices = getInvoices();
   return (
     <div style={{ display: "flex" }}>
@@ -25,8 +25,3 @@ export async default function Invoices() {
     </div>
   );
 }
-
-async function getInvoices() {
-//  return invoices;
-    return await fetch( '/localhost:50312/api/invoices' )
-  }

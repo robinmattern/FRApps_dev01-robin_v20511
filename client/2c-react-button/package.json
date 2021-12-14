@@ -1,0 +1,11 @@
+{
+  "name": "1c-react-button",
+  "version": "0.01.010",
+  "private": true,
+  "dependencies": {
+     },
+  "scripts": {
+    "start": "index.html",
+    "build": frt simplebuild"
+     }
+}

@@ -1,0 +1,2 @@
+(this["webpackJsonp0c-react-mt"]=this["webpackJsonp0c-react-mt"]||[]).push([[0],{10:function(t,e,c){"use strict";c.r(e);var n=c(0),r=c.n(n),s=c(3),a=c.n(s),i=(c(8),c(1));var o=function(){return Object(i.jsx)("div",{className:"App",children:"My MT React App"})};a.a.render(Object(i.jsx)(r.a.StrictMode,{children:Object(i.jsx)(o,{})}),document.getElementById("root"))},8:function(t,e,c){}},[[10,1,2]]]);
+//# sourceMappingURL=main.cd2712e3.chunk.js.map

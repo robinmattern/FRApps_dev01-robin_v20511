@@ -1,5 +1,5 @@
 {
-  "name": "2c-react",
+  "name": "4c-react-wi-api",
   "version": "0.01.010",
   "private": true,
   "dependencies": {
@@ -8,8 +8,8 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "set PORT=50012 && ..\\node_modules\\.bin\\react-scripts  start",
-    "start-unix": "PORT=50012 ../node_modules/.bin/react-scripts  start",
+    "start": "set PORT=50014 && ..\\node_modules\\.bin\\react-scripts  start",
+    "start-unix": "PORT=50014 ../node_modules/.bin/react-scripts  start",
     "eject": "..\\node_modules\\.bin\\react-scripts  eject",
     "build": "..\\node_modules\\.bin\\react-scripts  build",
     "test": "..\\node_modules\\.bin\\react-scripts  test"
