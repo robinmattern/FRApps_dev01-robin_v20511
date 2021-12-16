@@ -1,11 +1,12 @@
 {
-  "name": "1c-react-button",
+  "name": "2c-react-button",
   "version": "0.01.010",
   "private": true,
   "dependencies": {
      },
   "scripts": {
     "start": "index.html",
-    "build": frt simplebuild"
+    "build": "echo   *** There is no build for 2c-react-button",
+    "prod": "index.html"
      }
 }

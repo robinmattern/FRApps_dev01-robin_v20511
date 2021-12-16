@@ -5,12 +5,12 @@
   "dependencies": {
   },
   "scripts": {
-    "start": "set PORT=50010 && ..\\node_modules\\.bin\\react-scripts  start",
-    "start-unix": "PORT=50010 ../node_modules/.bin/react-scripts  start",
+    "start": "set PORT=50161 && ..\\node_modules\\.bin\\react-scripts  start",
+    "start-unix": "PORT=50161 ../node_modules/.bin/react-scripts  start",
     "eject": "..\\node_modules\\.bin\\react-scripts  eject",
     "build": "..\\node_modules\\.bin\\react-scripts  build",
     "test": "..\\node_modules\\.bin\\react-scripts  test",
-    "prod": "serve -l 60010  -s build"
+    "prod": "serve -l 60161  -s build"
   },
   "eslintConfig": {
     "extends": [
