@@ -1,7 +1,8 @@
 {
   "name": "2c-react-button",
   "version": "0.01.010",
-  "private": true,
+  "author": "8020data",
+  "license": "ISC",
   "dependencies": {
      },
   "scripts": {

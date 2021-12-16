@@ -1,7 +1,8 @@
 {
-  "name": "0c-react-mt",
+  "name": "1c-react-empty",
   "version": "0.01.010",
-  "private": true,
+  "author": "8020data",
+  "license": "ISC",
   "dependencies": {
   },
   "scripts": {
