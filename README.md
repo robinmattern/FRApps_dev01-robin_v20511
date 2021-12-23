@@ -1,4 +1,4 @@
-## FormR's Simple React Apps
+## FormR's First React Apps
 
   ### 1. React-Empty 
       A clean client app with only one line of HTML and all the React dependancies.
