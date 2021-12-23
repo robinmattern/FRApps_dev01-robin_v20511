@@ -6,7 +6,7 @@ function App() {
 
     <div className="App">
 
-      My MT React App
+      My First MT React App
 
     </div>
   );
