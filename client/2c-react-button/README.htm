@@ -1,0 +1,322 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:black'>Add
+React in One Minute</span></b></p>
+
+<p class=MsoNormal style='margin-top:22.5pt;margin-right:0in;margin-bottom:
+0in;margin-left:0in;line-height:normal'><span style='font-size:13.0pt;
+font-family:"Segoe UI",sans-serif;color:black'>In this section, we will show
+how to add a React component to an existing HTML page. You can follow along
+with your own website, or create an empty HTML file to practice.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>There
+will be no complicated tools or install requirements —&nbsp;<b>to complete this
+section, you only need an internet connection, and a minute of your time.</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Optional:&nbsp;<a
+href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip"
+target="_blank"><span style='color:#1A1A1A;text-decoration:none'>Download the
+full example (2KB zipped)</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>Step 1:
+Add a DOM Container to the HTML</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>First,
+open the HTML page you want to edit. Add an empty&nbsp;</span><span
+style='font-size:12.0pt;font-family:Consolas;color:#1A1A1A'>&lt;div&gt;</span><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;tag
+to mark the spot where you want to display something with React. For example:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- ...
+existing HTML ... --&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&lt;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>div
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>id</span><span style='font-size:10.5pt;font-family:Consolas;
+color:#88C6BE;background:#353B45'>=&quot;</span><span style='font-size:10.5pt;
+font-family:Consolas;color:#8DC891;background:#353B45'>like_button_container</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&quot;&gt;&lt;/</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>div</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- ...
+existing HTML ... --&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>We gave
+this&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;color:#1A1A1A'>&lt;div&gt;</span><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;a
+unique&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>id</span><span style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>&nbsp;HTML attribute. This will allow us to find it from the
+JavaScript code later and display a React component inside of it.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Tip</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.0pt;
+font-family:"Segoe UI",sans-serif;color:black'>You can place a
+“container”&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>&lt;div&gt;</span><span style='font-size:13.0pt;font-family:
+"Segoe UI",sans-serif;color:black'>&nbsp;like this&nbsp;<b>anywhere</b>&nbsp;inside
+the&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;color:#1A1A1A'>&lt;body&gt;</span><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;tag.
+You may have as many independent DOM containers on one page as you need. They
+are usually empty — React will replace any existing content inside DOM
+containers.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>Step 2:
+Add the Script Tags</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Next,
+add three&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>&lt;script&gt;</span><span style='font-size:13.0pt;font-family:
+"Segoe UI",sans-serif;color:black'>&nbsp;tags to the HTML page right before the
+closing&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>&lt;/body&gt;</span><span style='font-size:13.0pt;font-family:
+"Segoe UI",sans-serif;color:black'>&nbsp;tag:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- ... other
+HTML ... --&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- Load React.
+--&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- Note: when
+deploying, replace &quot;development.js&quot; with
+&quot;production.min.js&quot;. --&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&lt;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>src</span><span style='font-size:10.5pt;font-family:Consolas;
+color:#88C6BE;background:#353B45'>=&quot;</span><span style='font-size:10.5pt;
+font-family:Consolas;color:#8DC891;background:#353B45'>https://unpkg.com/react@17/umd/react.development.js</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&quot;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>crossorigin</span><span style='font-size:10.5pt;font-family:
+Consolas;color:#88C6BE;background:#353B45'>&gt;&lt;/</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&gt;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&lt;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>src</span><span style='font-size:10.5pt;font-family:Consolas;
+color:#88C6BE;background:#353B45'>=&quot;</span><span style='font-size:10.5pt;
+font-family:Consolas;color:#8DC891;background:#353B45'>https://unpkg.com/react-dom@17/umd/react-dom.development.js</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&quot;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>crossorigin</span><span style='font-size:10.5pt;font-family:
+Consolas;color:#88C6BE;background:#353B45'>&gt;&lt;/</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>&lt;!-- Load our
+React component. --&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>  </span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&lt;</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script
+</span><span style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;
+background:#353B45'>src</span><span style='font-size:10.5pt;font-family:Consolas;
+color:#88C6BE;background:#353B45'>=&quot;</span><span style='font-size:10.5pt;
+font-family:Consolas;color:#8DC891;background:#353B45'>like_button.js</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&quot;&gt;&lt;/</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E;background:#353B45'>script</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE'>&lt;/</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#FC929E'>body</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE'>&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:22.5pt;margin-right:0in;margin-bottom:
+0in;margin-left:0in;line-height:normal'><span style='font-size:13.0pt;
+font-family:"Segoe UI",sans-serif;color:black'>The first two tags load React.
+The third one will load your component code.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>Step 3:
+Create a React Component</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Create a
+file called&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>like_button.js</span><span style='font-size:13.0pt;font-family:
+"Segoe UI",sans-serif;color:black'>&nbsp;next to your HTML page.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Open&nbsp;<b><a
+href="https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js"
+target="_blank"><span style='color:#1A1A1A;text-decoration:none'>this starter
+code</span></a></b>&nbsp;and paste it into the file you created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>Tip</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.0pt;
+font-family:"Segoe UI",sans-serif;color:black'>This code defines a React
+component called&nbsp;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:#1A1A1A'>LikeButton</span><span style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>. Don’t worry if you don’t understand it yet — we’ll cover the
+building blocks of React later in our&nbsp;<a
+href="https://reactjs.org/tutorial/tutorial.html"><span style='color:#1A1A1A;
+text-decoration:none'>hands-on tutorial</span></a>&nbsp;and&nbsp;<a
+href="https://reactjs.org/docs/hello-world.html"><span style='color:#1A1A1A;
+text-decoration:none'>main concepts guide</span></a>. For now, let’s just get
+it showing on the screen!</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>After&nbsp;<b><a
+href="https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js"
+target="_blank"><span style='color:#1A1A1A;text-decoration:none'>the starter
+code</span></a></b>, add two lines to the bottom of&nbsp;</span><span
+style='font-size:12.0pt;font-family:Consolas;color:#1A1A1A'>like_button.js</span><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#B2B2B2'>// ... the starter
+code you pasted ...</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.0pt;background:#282C34'><span
+style='font-size:10.5pt;font-family:Consolas;color:#C5A5C5;background:#353B45'>const</span><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>
+domContainer </span><span style='font-size:10.5pt;font-family:Consolas;
+color:#D7DEEA;background:#353B45'>=</span><span style='font-size:10.5pt;
+font-family:Consolas;color:white;background:#353B45'> document</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>.</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#79B6F2;background:#353B45'>querySelector</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>(</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#8DC891;background:#353B45'>'#like_button_container'</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>);</span><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>ReactDOM</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>.</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#79B6F2;background:#353B45'>render</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>(</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#79B6F2;background:#353B45'>e</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>(</span><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>LikeButton</span><span
+style='font-size:10.5pt;font-family:Consolas;color:#88C6BE;background:#353B45'>),</span><span
+style='font-size:10.5pt;font-family:Consolas;color:white;background:#353B45'>
+domContainer</span><span style='font-size:10.5pt;font-family:Consolas;
+color:#88C6BE;background:#353B45'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>These
+two lines of code find the&nbsp;</span><span style='font-size:12.0pt;
+font-family:Consolas;color:#1A1A1A'>&lt;div&gt;</span><span style='font-size:
+13.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;we added to our
+HTML in the first step, and then display our “Like” button React component
+inside of it.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;color:black'>That’s
+It!</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:13.0pt;font-family:"Segoe UI",sans-serif;color:black'>There is
+no step four.&nbsp;<b>You have just added the first React component to your
+website.</b></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

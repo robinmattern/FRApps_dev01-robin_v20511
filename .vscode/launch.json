@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch current file",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${file}"
+    },
+    {
+       "type": "node",
+       "request": "launch",
+       "name": "1c-react-empty 50161",
+       "cwd": "${workspaceFolder}\\client\\1c-react-empty",
+       "runtimeExecutable": "npm",
+       "runtimeArgs": [ "start" ],
+       "skipFiles": [ "<node_internals>/**" ],
+        },
+    {
+       "type": "node",
+       "request": "launch",
+       "name": "2c-react-button",
+       "cwd": "${workspaceFolder}\\client\\2c-react-button",
+       "runtimeExecutable": "npm",
+       "runtimeArgs": [ "start" ],
+       "skipFiles": [ "<node_internals>/**" ],
+        },    
+    {
+       "type": "node",
+       "request": "launch",
+       "name": "3c-react-no-api 50163",
+       "cwd": "${workspaceFolder}\\client\\3c-react-no-api",
+       "runtimeExecutable": "npm",
+       "runtimeArgs": [ "start" ],
+       "skipFiles": [ "<node_internals>/**" ],
+        },
+    {
+       "type": "node",
+       "request": "launch",
+       "name": "4c-react-wi-api 50164",
+       "cwd": "${workspaceFolder}\\client\\4c-react-wi-api",
+       "runtimeExecutable": "npm",
+       "runtimeArgs": [ "start" ],
+       "skipFiles": [ "<node_internals>/**" ],
+        },
+    {
+       "type": "node",
+       "request": "launch",
+       "name": "4s-react-wi-api 50114",
+       "cwd": "${workspaceFolder}\\server\\4s-react-wi-api",
+       "runtimeExecutable": "npm",
+       "runtimeArgs": [ "start" ],
+       "skipFiles": [ "<node_internals>/**" ],
+        }
+  ]
+}

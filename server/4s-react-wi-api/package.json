@@ -6,8 +6,8 @@
   "dependencies": {
   },
   "scripts": {
-    "start":   "..\\node_modules\\.bin\\json-server  -p 50114 -r routes.json --watch db.json",
-    "start-unix": "../node_modules/.bin/json-server  -p 50114 -r routes.json --watch db.json"
+    "start":   "..\\node_modules\\.bin\\json-server  -p 50114 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
+    "start-unix": "../node_modules/.bin/json-server  -p 50114 -r api/routes/routes.json --watch api/models/db.json api/models/db.json"
   },
   "browserslist": {
     "production": [

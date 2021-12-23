@@ -1,22 +1,3 @@
-# First React App with React-Router and Json-Server 
-
-The `react-router` package is the heart of [React Router](/) and provides all
-the core functionality for both
-[`react-router-dom`](/packages/react-router-dom)
-and
-[`react-router-native`](/packages/react-router-native).
-
-If you're using React Router, you should never `import` anything directly from
-the `react-router` package, but you should have everything you need in either
-`react-router-dom` or `react-router-native`. Both of those packages re-export
-everything from `react-router`.
-
-If you'd like to extend React Router and you know what you're doing, you should
-add `react-router` **as a peer dependency, not a regular dependency** in your
-package.
-
---------------------------------------------------------------------------------
-
 # JSON Server [![Node.js CI](https://github.com/typicode/json-server/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/typicode/json-server/actions/workflows/node.js.yml)
 
 Get a full fake REST API with __zero coding__ in __less than 30 seconds__ (seriously)
